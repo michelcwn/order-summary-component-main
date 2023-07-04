@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap");
+
+$color-white: #ffffff;
+$color-metal: #717fa6;
+$color-gunmetal: #1f2e55;
+$color-light-grey: #dfe6fb;
+$color-light: #f7f9ff;
+$color-purple: #382ae1;
+
+//RESPOSIVE
+$bp-small: 37.5em; //600px
+$bp-very-small: 31.25em; //500px
+$bp-iphone: 23.43em; //375px
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1.6rem;
+    background-color: $color-light-grey;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-iphone) {
+        font-size: 1.4rem;
+    }
+}

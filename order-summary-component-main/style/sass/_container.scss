@@ -1,0 +1,146 @@
+.container {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    height: auto;
+    overflow: hidden;
+    border-radius: 2.5rem;
+
+    @media only screen and (max-width: $bp-small) {
+        width: 40rem;
+    }
+
+    @media only screen and (max-width: $bp-very-small) {
+        width: 35rem;
+    }
+
+    @media only screen and (max-width: $bp-iphone) {
+        width: 30rem;
+    }
+
+    .image {
+        width: 50rem;
+        height: auto;
+        border-radius: inherit;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        @media only screen and (max-width: $bp-small) {
+            width: 40rem;
+        }
+
+        @media only screen and (max-width: $bp-very-small) {
+            width: 35rem;
+        }
+
+        @media only screen and (max-width: $bp-iphone) {
+            width: 30rem;
+        }
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem;
+        background-color: $color-white;
+
+        @media only screen and (max-width: $bp-very-small) {
+            width: 35rem;
+            padding: 3rem 2rem;
+        }
+
+        @media only screen and (max-width: $bp-iphone) {
+            width: 30rem;
+            padding: 2rem 1.5rem;
+        }
+
+        .heading {
+            margin-bottom: 2.5rem;
+
+            @media only screen and (max-width: $bp-iphone) {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .paragraph {
+            margin-bottom: 2.5rem;
+            text-align: center;
+
+            @media only screen and (max-width: $bp-iphone) {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .plan {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $color-light;
+            padding: 2rem;
+            border-radius: 2rem;
+            width: 100%;
+
+            &__img {
+                margin-right: 2rem;
+            }
+
+            &__price {
+                display: flex;
+                flex-direction: column;
+                margin-right: 8rem;
+
+                @media only screen and (max-width: $bp-very-small) {
+                    margin-right: 3.5rem;
+                }
+
+                &--annual {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            &__change {
+                transition: opacity 0.3s ease; // Transition smooth
+                cursor: pointer;
+                &:hover {
+                    opacity: 0.75;
+                }
+            }
+        }
+
+        .btn {
+            background-color: $color-purple;
+            color: $color-white;
+            border: none;
+            margin: 3rem 0;
+            padding: 2rem;
+            cursor: pointer;
+            outline: inherit;
+            width: 100%;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: opacity 0.3s ease; // Transition smooth
+
+            @media only screen and (max-width: $bp-iphone) {
+                margin: 1.5rem;
+            }
+
+            &:hover {
+                opacity: 0.75;
+            }
+        }
+
+        .cancel {
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}

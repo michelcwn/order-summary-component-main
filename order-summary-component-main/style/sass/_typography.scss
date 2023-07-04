@@ -1,0 +1,47 @@
+.heading {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: $color-gunmetal;
+
+    @media only screen and (max-width: $bp-iphone) {
+        font-size: 2.4rem;
+    }
+}
+
+.paragraph {
+    color: $color-metal;
+}
+
+.plan {
+    &__price {
+        &--annual {
+            color: $color-gunmetal;
+            font-weight: 900;
+        }
+
+        &--infos {
+            color: $color-metal;
+        }
+    }
+
+    &__change {
+        color: $color-purple;
+        font-weight: 700;
+        border-bottom: 1px solid $color-purple;
+        width: fit-content;
+    }
+}
+
+.cancel {
+    color: $color-metal;
+    font-weight: 700;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 700;
+
+    @media only screen and (max-width: $bp-iphone) {
+        font-size: 1.4rem;
+    }
+}
